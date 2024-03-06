@@ -1,0 +1,10 @@
+{
+  "Health Potion": {
+    "effect": "restore health",
+    "amount": 20
+  },
+  "Stamina Potion": {
+    "effect": "restore stamina",
+    "amount": 15
+  }
+}
