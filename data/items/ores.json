@@ -1,0 +1,14 @@
+{
+  "Iron Ore": {
+    "points": 10,
+    "rarity": "common"
+  },
+  "Gold Ore": {
+    "points": 50,
+    "rarity": "rare"
+  },
+  "Mithril Ore": {
+    "points": 100,
+    "rarity": "very rare"
+  }
+}
