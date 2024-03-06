@@ -1,0 +1,14 @@
+{
+  "Pickaxe": {
+    "type": "tool",
+    "effect": "increase mining efficiency"
+  },
+  "Sword": {
+    "type": "weapon",
+    "attack_bonus": 10
+  },
+  "Shield": {
+    "type": "armor",
+    "defense_bonus": 5
+  }
+}
