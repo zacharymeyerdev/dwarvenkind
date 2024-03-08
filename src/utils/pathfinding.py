@@ -1,16 +1,16 @@
 # pathfinding.py
+import pygame
+from queue import PriorityQueue
 
 def find_path(start, goal, map_data):
     """
-    Find the shortest path from start to goal.
+    Find the shortest path from start to goal using PyGame.
 
     :param start: Tuple (x, y) representing the start position.
     :param goal: Tuple (x, y) representing the goal position.
     :param map_data: 2D list representing the map, where 0 is passable and 1 is an obstacle.
     :return: List of tuples as the path from start to goal.
     """
-    from queue import PriorityQueue
-
     def get_neighbors(pos):
         """
         Get neighbors of the current position.
@@ -18,11 +18,12 @@ def find_path(start, goal, map_data):
         :param pos: Tuple (x, y).
         :return: List of neighbor positions.
         """
-        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]  # up, down, left, right
+        directions = [pygame.math.Vector2(0, -1), pygame.math.Vector2(0, 1),
+                      pygame.math.Vector2(-1, 0), pygame.math.Vector2(1, 0)]  # up, down, left, right
         neighbors = []
-        for dx, dy in directions:
-            x, y = pos[0] + dx, pos[1] + dy
-            if 0 <= x < len(map_data[0]) and 0 <= y < len(map_data) and map_data[y][x] == 0:
+        for direction in directions:
+            x, y = pos[0] + direction.x, pos[1] + direction.y
+            if 0 <= x < len(map_data[0]) and 0 <= y < len(map_data) and map_data[int(y)][int(x)] == 0:
                 neighbors.append((x, y))
         return neighbors
 
