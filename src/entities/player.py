@@ -1,39 +1,34 @@
 # player.py
+import pygame
 
 class Player:
-    def __init__(self, name, health=100, attack_power=10, defense=5, score=0):
+    def __init__(self, name, sprite_path, health=100, attack_power=10, defense=5, score=0):
         """
-        Initialize a new player character.
+        Initialize a new player character with PyGame.
 
         :param name: String representing the player's name.
+        :param sprite_path: Path to the player's sprite image.
         :param health: Integer representing the player's health.
         :param attack_power: Integer representing the player's attack power.
         :param defense: Integer representing the player's defense.
         :param score: Integer representing the player's score.
         """
         self.name = name
+        self.sprite = pygame.image.load(sprite_path)
         self.health = health
         self.attack_power = attack_power
         self.defense = defense
         self.score = score
         self.inventory = []  # List to store player's items
-        self.position = (0, 0)  # Player starts at position (0, 0)
+        self.position = pygame.math.Vector2(0, 0)  # Player starts at position (0, 0)
 
     def move(self, direction):
         """
-        Move the player in a given direction.
+        Move the player in a given direction using PyGame.
 
-        :param direction: String ('up', 'down', 'left', 'right') indicating the movement direction.
+        :param direction: Vector2 representing the movement direction.
         """
-        x, y = self.position
-        if direction == 'up':
-            self.position = (x, y-1)
-        elif direction == 'down':
-            self.position = (x, y+1)
-        elif direction == 'left':
-            self.position = (x-1, y)
-        elif direction == 'right':
-            self.position = (x+1, y)
+        self.position += direction
 
     def attack(self, target):
         """
@@ -77,7 +72,18 @@ class Player:
         # Logic for moving to the next level (e.g., increase difficulty, reset map)
         pass
 
+    def draw(self, surface):
+        """
+        Draw the player on the given PyGame surface.
+
+        :param surface: The PyGame surface to draw the player on.
+        """
+        surface.blit(self.sprite, (self.position.x, self.position.y))
+
 # Example usage (commented out)
-# player = Player('Dwarf Hero')
-# player.move('up')
-# player.mine_ore(5)
+# pygame.init()
+# screen = pygame.display.set_mode((800, 600))
+# player = Player('Dwarf Hero', 'path/to/sprite.png')
+# player.move(pygame.math.Vector2(1, 0))  # Move right
+# player.draw(screen)
+# pygame.quit()
