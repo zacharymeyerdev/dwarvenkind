@@ -1,18 +1,19 @@
 # helpers.py
+import pygame
 
 def calculate_distance(pos1, pos2):
     """
-    Calculate the Euclidean distance between two points.
+    Calculate the Euclidean distance between two points using PyGame.
 
     :param pos1: Tuple (x, y) representing the first position.
     :param pos2: Tuple (x, y) representing the second position.
     :return: Float representing the distance.
     """
-    return ((pos2[0] - pos1[0]) ** 2 + (pos2[1] - pos1[1]) ** 2) ** 0.5
+    return pygame.math.Vector2(pos1).distance_to(pygame.math.Vector2(pos2))
 
 def clamp(value, min_value, max_value):
     """
-    Clamp a value between a minimum and maximum value.
+    Clamp a value between a minimum and maximum value using PyGame.
 
     :param value: The value to clamp.
     :param min_value: The minimum allowed value.
@@ -23,21 +24,18 @@ def clamp(value, min_value, max_value):
 
 def direction_to_vector(direction):
     """
-    Convert a direction (e.g., 'up', 'down') to a vector.
+    Convert a direction (e.g., 'up', 'down') to a vector using PyGame.
 
     :param direction: String representing the direction.
     :return: Tuple (dx, dy) representing the direction vector.
     """
-    if direction == 'up':
-        return (0, -1)
-    elif direction == 'down':
-        return (0, 1)
-    elif direction == 'left':
-        return (-1, 0)
-    elif direction == 'right':
-        return (1, 0)
-    else:
-        return (0, 0)
+    directions = {
+        'up': pygame.math.Vector2(0, -1),
+        'down': pygame.math.Vector2(0, 1),
+        'left': pygame.math.Vector2(-1, 0),
+        'right': pygame.math.Vector2(1, 0)
+    }
+    return directions.get(direction, pygame.math.Vector2(0, 0))
 
 # Example usage (commented out)
 # distance = calculate_distance((0, 0), (3, 4))
