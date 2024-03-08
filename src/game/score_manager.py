@@ -1,12 +1,18 @@
 # score_manager.py
+import pygame
 
 class ScoreManager:
-    def __init__(self):
+    def __init__(self, font, screen):
         """
-        Initialize the Score Manager.
+        Initialize the Score Manager with PyGame.
+
+        :param font: PyGame font for rendering text.
+        :param screen: PyGame screen to display the scores.
         """
         self.score = 0
         self.high_scores = []  # List to store high scores
+        self.font = font
+        self.screen = screen
 
     def add_score(self, points):
         """
@@ -30,25 +36,27 @@ class ScoreManager:
         self.high_scores.sort(reverse=True)  # Sort scores in descending order
         self.high_scores = self.high_scores[:5]  # Keep only top 5 scores
 
-    def get_high_scores(self):
+    def display_scores(self):
         """
-        Get the list of high scores.
+        Display the current score and high scores on the screen.
+        """
+        # Display Current Score
+        current_score_text = f"Score: {self.score}"
+        current_score_surface = self.font.render(current_score_text, True, (255, 255, 255))
+        self.screen.blit(current_score_surface, (20, 100))
 
-        :return: List of high scores.
-        """
-        return self.high_scores
-
-    def get_current_score(self):
-        """
-        Get the current score.
-
-        :return: The current score.
-        """
-        return self.score
+        # Display High Scores
+        for i, high_score in enumerate(self.high_scores):
+            high_score_text = f"High Score {i+1}: {high_score}"
+            high_score_surface = self.font.render(high_score_text, True, (255, 255, 255))
+            self.screen.blit(high_score_surface, (20, 130 + i*30))
 
 # Example usage (commented out)
-# score_manager = ScoreManager()
+# pygame.init()
+# screen = pygame.display.set_mode((800, 600))
+# font = pygame.font.Font(None, 36)
+# score_manager = ScoreManager(font, screen)
 # score_manager.add_score(100)
 # score_manager.update_high_scores()
-# print(score_manager.get_high_scores())
-# score_manager.reset_score()
+# score_manager.display_scores()
+# pygame.quit()
