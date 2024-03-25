@@ -3,6 +3,26 @@
     "points": 10,
     "rarity": "common"
   },
+  "Copper Ore": {
+    "points": 10,
+    "rarity": "common"
+  },
+  "Tin Ore": {
+    "points": 10,
+    "rarity": "common"
+  },
+  "Silver Ore": {
+    "points": 10,
+    "rarity": "rare"
+  },
+  "Platinum Ore": {
+    "points": 10,
+    "rarity": "rare"
+  },
+  "Orichalcum Ore": {
+    "points": 10,
+    "rarity": "very rare"
+  },
   "Gold Ore": {
     "points": 50,
     "rarity": "rare"
