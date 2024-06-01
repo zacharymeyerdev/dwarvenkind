@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject OptionsPanel;  // Reference to the Options Panel
+    public GameObject MainMenuCanvas; // Reference to the Main Menu Canvas
+
     public void PlayGame()
     {
         SceneManager.LoadScene("GameScene"); // Ensure "GameScene" is the name of your main game scene
@@ -17,6 +20,13 @@ public class MainMenu : MonoBehaviour
 
     public void OpenOptions()
     {
-        // Add functionality to open options menu
+        OptionsPanel.SetActive(true);
+        MainMenuCanvas.SetActive(false);
+    }
+
+    public void CloseOptions()
+    {
+        OptionsPanel.SetActive(false);
+        MainMenuCanvas.SetActive(true);
     }
 }
