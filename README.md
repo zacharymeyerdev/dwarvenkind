@@ -13,14 +13,16 @@ You are a dwarf from a renowned clan known for their mining expertise. The mines
 ### Exploration
 - **Procedural Generation**: Each floor of the mine is procedurally generated, providing a fresh layout every time the game is played. This includes random placement of enemies, resources, traps, and treasures.
 - **Structured Blueprints**: While the overall layout is random, certain key elements and rooms follow structured blueprints to ensure a balanced difficulty curve and strategic play.
+- **Free Movement**: Movement is not bound by a grid, allowing for fluid and free exploration within the mine.
 
 ### Combat
 - **Enemies**: Each floor has its own set of enemies with unique attack patterns and behaviors. As players descend, the enemies become more challenging.
 - **Boss Battles**: At the end of each floor, players face a boss that must be defeated to progress to the next level. Bosses have distinct attack phases and require strategic combat to defeat.
 - **Weapons & Abilities**: Players can find and upgrade various weapons and abilities, enhancing their combat effectiveness and introducing new tactics.
 
-### Mining
+### Mining and Environment Interaction
 - **Resource Gathering**: Players can mine different resources like gold, gems, and rare minerals. These resources contribute to the player’s score and can be used for upgrades.
+- **Destructible Environment**: Both players and enemies can shape the environment. Players can mine stone and other materials to create new paths, and enemy attacks can also alter the environment, adding strategic depth to encounters.
 - **Tools**: Different tools are available for mining, each with varying effectiveness and durability.
 
 ### Scoring System
