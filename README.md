@@ -62,7 +62,7 @@ You are a dwarf from a renowned clan known for their mining expertise. The mines
 - Other (to be added)
 
 ### Materials
-- Stone
+- Stone (0 points)
 - Iron
 - Copper
 - Silver
@@ -76,15 +76,15 @@ You are a dwarf from a renowned clan known for their mining expertise. The mines
 - Emerald
 
 ### Potions
-- Health I
-- Health II
-- Health III
-- Stoneskin
-- Ironstomach
-- Speed I
-- Speed II
-- Whisper
-- Invisibility
+- Health I (heals 1 heart)
+- Health II (heals 2 hearts)
+- Health III (heals 3 hearts)
+- Stoneskin (decreases damage dealt to dwarf by 30%)
+- Ironstomach (allows dwarf to consume enemies to gain 1 heart per)
+- Speed I (increases speed by 20%)
+- Speed II (increases speed by 40%)
+- Whisper (dwarf makes no sound while moving)
+- Invisibility (dwarf cannot be seen by enemies)
 
 ### Activities
 - **Tipping**: Coating the tip of pickaxe in a material to make it stronger.
