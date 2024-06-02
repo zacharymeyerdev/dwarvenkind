@@ -46,45 +46,45 @@ You are a dwarf from a renowned clan known for their mining expertise. The mines
 - **Jeweler**: Purchases gems and jewels for a great deal.
 
 ### Enemies
-- Goblin
-- Duergar
-- Drow
-- Corpse Crawler
-- Carrion Crawler
-- Dragon
-- Shroom
-- Shroomstem
-- Gnome
-- Fire Elemental
-- Water Elemental
-- Earth Elemental
-- Air Elemental
+- Goblin: Small, green-skinned creatures known for their cunning and aggression. They typically attack in groups and can be found throughout the mines.
+- Duergar: Dark dwarves who have been corrupted by the mines. They are formidable fighters with strong defensive abilities.
+- Drow: Dark elves who have made the mines their home. They are agile and use magic and ranged attacks to fight.
+- Corpse Crawler: Undead creatures that slither along the ground, attacking with their poisonous bites.
+- Carrion Crawler: Larger, more aggressive versions of corpse crawlers. They have stronger poison and can deal significant damage.
+- Dragon: Powerful and rare enemies found in the deepest parts of the mine. They have devastating attacks and high health.
+- Shroom: Sentient mushrooms that can poison players. They are stationary but emit toxic spores.
+- Shroomstem: Larger, mobile versions of shrooms. They can move and attack players directly while spreading poison.
+- Gnome: Small, magical beings that use illusion and trickery to confuse and attack the player.
+- Fire Elemental: Entities composed of fire that deal burn damage over time and can ignite the environment.
+- Water Elemental: Entities composed of water that can flood areas and drown the player if not careful.
+- Earth Elemental: Solid rock entities that are tough to damage and can cause cave-ins.
+- Air Elemental: Invisible entities that move swiftly and can create strong gusts of wind to push the player around.
 - Other (to be added)
 
 ### Materials
-- Stone (0 points)
-- Iron
-- Copper
-- Silver
-- Platinum
-- Gold
-- Adamantium
-- Mythril
-- Diamond
-- Ruby
-- Sapphire
-- Emerald
+- Stone (0 points): Basic material found throughout the mines. Used mainly for clearing paths and has no point value.
+- Iron: Common metal used for basic upgrades and tools.
+- Copper: Slightly more valuable than iron and used for crafting and upgrades.
+- Silver: Precious metal with higher point value, used for advanced tools and upgrades.
+- Platinum: Rare metal that offers high points and is used for powerful upgrades.
+- Gold: Valuable metal with high points, used for crafting and selling.
+- Adamantium: Extremely strong metal used for top-tier upgrades and high points.
+- Mythril: Lightweight and strong metal, highly valuable for crafting and upgrades.
+- Diamond: Precious gemstone with very high points, used for crafting and selling.
+- Ruby: Valuable gemstone with high points, used for crafting and selling.
+- Sapphire: Valuable gemstone with high points, used for crafting and selling.
+- Emerald: Valuable gemstone with high points, used for crafting and selling.
 
 ### Potions
-- Health I (heals 1 heart)
-- Health II (heals 2 hearts)
-- Health III (heals 3 hearts)
-- Stoneskin (decreases damage dealt to dwarf by 30%)
-- Ironstomach (allows dwarf to consume enemies to gain 1 heart per)
-- Speed I (increases speed by 20%)
-- Speed II (increases speed by 40%)
-- Whisper (dwarf makes no sound while moving)
-- Invisibility (dwarf cannot be seen by enemies)
+- Health I (heals 1 heart): Basic healing potion that restores one heart of health.
+- Health II (heals 2 hearts): Enhanced healing potion that restores two hearts of health.
+- Health III (heals 3 hearts): Powerful healing potion that restores three hearts of health.
+- Stoneskin (decreases damage dealt to dwarf by 30%): Potion that temporarily hardens the dwarf's skin, reducing incoming damage by 30%.
+- Ironstomach (allows dwarf to consume enemies to gain 1 heart per): Potion that allows the dwarf to consume defeated enemies to regain one heart of health per enemy.
+- Speed I (increases speed by 20%): Potion that increases the dwarf's movement speed by 20% for a limited time.
+- Speed II (increases speed by 40%): Potion that significantly increases the dwarf's movement speed by 40% for a limited time.
+- Whisper (dwarf makes no sound while moving): Potion that silences the dwarf's movements, making it easier to avoid detection by enemies.
+- Invisibility (dwarf cannot be seen by enemies): Potion that renders the dwarf invisible to enemies for a short duration, allowing for stealthy movement.
 
 ### Activities
 - **Tipping**: Coating the tip of pickaxe in a material to make it stronger.
