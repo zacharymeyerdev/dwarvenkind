@@ -62,18 +62,18 @@ You are a dwarf from a renowned clan known for their mining expertise. The mines
 - Other (to be added)
 
 ### Materials
-- Stone (0 points): Basic material found throughout the mines. Used mainly for clearing paths and has no point value.
-- Iron: Common metal used for basic upgrades and tools.
-- Copper: Slightly more valuable than iron and used for crafting and upgrades.
-- Silver: Precious metal with higher point value, used for advanced tools and upgrades.
-- Platinum: Rare metal that offers high points and is used for powerful upgrades.
-- Gold: Valuable metal with high points, used for crafting and selling.
-- Adamantium: Extremely strong metal used for top-tier upgrades and high points.
-- Mythril: Lightweight and strong metal, highly valuable for crafting and upgrades.
-- Diamond: Precious gemstone with very high points, used for crafting and selling.
-- Ruby: Valuable gemstone with high points, used for crafting and selling.
-- Sapphire: Valuable gemstone with high points, used for crafting and selling.
-- Emerald: Valuable gemstone with high points, used for crafting and selling.
+- Stone (0 points): Basic material found throughout the mines. Used mainly for clearing paths.
+- Iron (5 points): Common metal used for basic upgrades and tools.
+- Copper (10 points): Slightly more valuable than iron and used for crafting and upgrades.
+- Silver (15 points): Precious metal with higher point value, used for advanced tools and upgrades.
+- Platinum (20 points): Rare metal that offers high points and is used for powerful upgrades.
+- Gold (30 points): Valuable metal with high points, used for crafting and selling.
+- Adamantium (45 points): Extremely strong metal used for top-tier upgrades and high points.
+- Mythril (50 points): Lightweight and strong metal, highly valuable for crafting and upgrades.
+- Emerald (65 points): Valuable gemstone with high points, used for crafting and selling.
+- Sapphire (80 points): Valuable gemstone with high points, used for crafting and selling.
+- Ruby (90 points): Valuable gemstone with high points, used for crafting and selling.
+- Diamond (100 points): Precious gemstone with very high points, used for crafting and selling.
 
 ### Potions
 - Health I (heals 1 heart): Basic healing potion that restores one heart of health.
